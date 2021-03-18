@@ -16,5 +16,8 @@ namespace FormularioGrafico
         {
             InitializeComponent();
         }
+
+
+        
     }
 }
