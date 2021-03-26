@@ -59,12 +59,7 @@ namespace FormularioGrafico
                 Tproduccion.Text = Cantidad_acumulada.ToString();
                 Bproducto.Text = Calculo_Salario.ToString();
                 Bsalario.Text = Bonificacion.ToString();
-                Stotal.Text = Salario_Total.ToString();
-                
-
-
-
-
+                Stotal.Text = Salario_Total.ToString();                
 
             }
             else if (Cantidad_acumulada > 200 && Cantidad_acumulada < 300)
@@ -81,10 +76,7 @@ namespace FormularioGrafico
                 Bproducto.Text = Calculo_Salario.ToString();
                 Bsalario.Text = Bonificacion.ToString();
                 Stotal.Text = Salario_Total.ToString();
-
-
-                
-
+               
 
             }
             else if (Cantidad_acumulada >= 300 && Cantidad_acumulada < 400)
