@@ -33,19 +33,23 @@ namespace FormularioGrafico
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Cdias = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Temp_Max = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Temp_Min = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataTemperaturas = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PorcOk = new System.Windows.Forms.TextBox();
+            this.PorcError = new System.Windows.Forms.TextBox();
+            this.TotalOk = new System.Windows.Forms.TextBox();
+            this.TotalError = new System.Windows.Forms.TextBox();
             this.BtnCalcular = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Tmax = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Tmin = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTemperaturas)).BeginInit();
             this.SuspendLayout();
             // 
             // label14
@@ -69,7 +73,7 @@ namespace FormularioGrafico
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 108);
+            this.label1.Location = new System.Drawing.Point(40, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 13);
             this.label1.TabIndex = 29;
@@ -77,36 +81,26 @@ namespace FormularioGrafico
             // 
             // Cdias
             // 
-            this.Cdias.Location = new System.Drawing.Point(212, 105);
+            this.Cdias.Location = new System.Drawing.Point(212, 81);
             this.Cdias.Name = "Cdias";
             this.Cdias.Size = new System.Drawing.Size(100, 20);
             this.Cdias.TabIndex = 30;
             // 
-            // dataGridView1
+            // DataTemperaturas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Temp_Max,
-            this.Temp_Min});
-            this.dataGridView1.Location = new System.Drawing.Point(60, 155);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(243, 247);
-            this.dataGridView1.TabIndex = 31;
-            // 
-            // Temp_Max
-            // 
-            this.Temp_Max.HeaderText = "Temp Max";
-            this.Temp_Max.Name = "Temp_Max";
-            // 
-            // Temp_Min
-            // 
-            this.Temp_Min.HeaderText = "TempMin";
-            this.Temp_Min.Name = "Temp_Min";
+            this.DataTemperaturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataTemperaturas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.DataTemperaturas.Location = new System.Drawing.Point(455, 44);
+            this.DataTemperaturas.Name = "DataTemperaturas";
+            this.DataTemperaturas.Size = new System.Drawing.Size(243, 247);
+            this.DataTemperaturas.TabIndex = 31;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(401, 112);
+            this.label2.Location = new System.Drawing.Point(464, 319);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 13);
             this.label2.TabIndex = 32;
@@ -115,7 +109,7 @@ namespace FormularioGrafico
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(401, 136);
+            this.label3.Location = new System.Drawing.Point(464, 343);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 13);
             this.label3.TabIndex = 33;
@@ -124,7 +118,7 @@ namespace FormularioGrafico
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(401, 155);
+            this.label4.Location = new System.Drawing.Point(464, 362);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 34;
@@ -133,71 +127,118 @@ namespace FormularioGrafico
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(401, 177);
+            this.label5.Location = new System.Drawing.Point(464, 384);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 35;
             this.label5.Text = "% Validas";
             // 
-            // textBox1
+            // PorcOk
             // 
-            this.textBox1.Location = new System.Drawing.Point(535, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 36;
+            this.PorcOk.Location = new System.Drawing.Point(598, 384);
+            this.PorcOk.Name = "PorcOk";
+            this.PorcOk.Size = new System.Drawing.Size(100, 20);
+            this.PorcOk.TabIndex = 36;
             // 
-            // textBox2
+            // PorcError
             // 
-            this.textBox2.Location = new System.Drawing.Point(535, 155);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 37;
+            this.PorcError.Location = new System.Drawing.Point(598, 362);
+            this.PorcError.Name = "PorcError";
+            this.PorcError.Size = new System.Drawing.Size(100, 20);
+            this.PorcError.TabIndex = 37;
             // 
-            // textBox3
+            // TotalOk
             // 
-            this.textBox3.Location = new System.Drawing.Point(535, 133);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 38;
+            this.TotalOk.Location = new System.Drawing.Point(598, 340);
+            this.TotalOk.Name = "TotalOk";
+            this.TotalOk.Size = new System.Drawing.Size(100, 20);
+            this.TotalOk.TabIndex = 38;
             // 
-            // textBox4
+            // TotalError
             // 
-            this.textBox4.Location = new System.Drawing.Point(535, 108);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 39;
+            this.TotalError.Location = new System.Drawing.Point(598, 315);
+            this.TotalError.Name = "TotalError";
+            this.TotalError.Size = new System.Drawing.Size(100, 20);
+            this.TotalError.TabIndex = 39;
             // 
             // BtnCalcular
             // 
-            this.BtnCalcular.Location = new System.Drawing.Point(466, 231);
+            this.BtnCalcular.Location = new System.Drawing.Point(131, 191);
             this.BtnCalcular.Name = "BtnCalcular";
             this.BtnCalcular.Size = new System.Drawing.Size(75, 23);
             this.BtnCalcular.TabIndex = 40;
             this.BtnCalcular.Text = "Generar";
             this.BtnCalcular.UseVisualStyleBackColor = true;
+            this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(40, 108);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(137, 13);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Cual es la temperatura max:";
+            // 
+            // Tmax
+            // 
+            this.Tmax.Location = new System.Drawing.Point(212, 105);
+            this.Tmax.Name = "Tmax";
+            this.Tmax.Size = new System.Drawing.Size(100, 20);
+            this.Tmax.TabIndex = 42;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(40, 133);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 13);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Cual es la temperatura min: ";
+            // 
+            // Tmin
+            // 
+            this.Tmin.Location = new System.Drawing.Point(212, 130);
+            this.Tmin.Name = "Tmin";
+            this.Tmin.Size = new System.Drawing.Size(100, 20);
+            this.Tmin.TabIndex = 44;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "TempMax";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "TempMin";
+            this.Column2.Name = "Column2";
             // 
             // Ejercicio5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Tmin);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.Tmax);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.BtnCalcular);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TotalError);
+            this.Controls.Add(this.TotalOk);
+            this.Controls.Add(this.PorcError);
+            this.Controls.Add(this.PorcOk);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DataTemperaturas);
             this.Controls.Add(this.Cdias);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Name = "Ejercicio5";
             this.Text = "Ejercicio5";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTemperaturas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,17 +250,21 @@ namespace FormularioGrafico
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Cdias;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Temp_Max;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Temp_Min;
+        private System.Windows.Forms.DataGridView DataTemperaturas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PorcOk;
+        private System.Windows.Forms.TextBox PorcError;
+        private System.Windows.Forms.TextBox TotalOk;
+        private System.Windows.Forms.TextBox TotalError;
         private System.Windows.Forms.Button BtnCalcular;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox Tmax;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox Tmin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }
