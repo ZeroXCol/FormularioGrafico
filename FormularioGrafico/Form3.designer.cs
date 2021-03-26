@@ -1,7 +1,7 @@
 ﻿
 namespace AplicacionGrafica
 {
-    partial class Ejercicio3
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -142,7 +142,7 @@ namespace AplicacionGrafica
             this.label5.TabIndex = 24;
             this.label5.Text = "Respuesta:";
             // 
-            // Ejercicio3
+            // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -158,8 +158,8 @@ namespace AplicacionGrafica
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Ejercicio3";
-            this.Text = "Ejercicio3";
+            this.Name = "Form3";
+            this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

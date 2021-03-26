@@ -9,12 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace AplicacionGrafica
 {
-    public partial class Ejercicio9 : Form
+    public partial class Form9 : Form
     {
-        public Ejercicio9()
+        public Form9()
         {
             InitializeComponent();
         }

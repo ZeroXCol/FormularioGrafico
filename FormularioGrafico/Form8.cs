@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AplicacionGrafica
 {
-    public partial class Ejercicio8 : Form
+    public partial class Form8 : Form
     {
-        public Ejercicio8()
+        public Form8()
         {
             InitializeComponent();
         }

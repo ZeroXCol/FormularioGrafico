@@ -1,7 +1,7 @@
 ﻿
 namespace AplicacionGrafica
 {
-    partial class Ejercicio9
+    partial class Form9
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -124,7 +124,7 @@ namespace AplicacionGrafica
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Ejercicio9
+            // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,7 +138,7 @@ namespace AplicacionGrafica
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Ejercicio9";
+            this.Name = "Form9";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
