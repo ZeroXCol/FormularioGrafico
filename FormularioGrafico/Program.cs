@@ -14,7 +14,7 @@ namespace FormularioGrafico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ejercicio5());
+            Application.Run(new Ejercicio1());
         }
     }
 }
