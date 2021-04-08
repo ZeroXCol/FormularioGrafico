@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace AplicacionGrafica
+namespace FormularioGrafico
 {
     public partial class Ejercicio9 : Form
     {
@@ -85,6 +85,13 @@ namespace AplicacionGrafica
         {
             textBox1.Text = String.Empty;
             textBox2.Text = String.Empty;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Menu Mn = new Menu();
+            Mn.Visible = true;
         }
     }
 }

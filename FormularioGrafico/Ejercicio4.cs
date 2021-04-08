@@ -136,5 +136,12 @@ namespace FormularioGrafico
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Menu Mn = new Menu();
+            Mn.Visible = true;
+        }
     }
 }

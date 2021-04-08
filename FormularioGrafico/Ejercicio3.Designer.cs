@@ -1,5 +1,5 @@
 ﻿
-namespace AplicacionGrafica
+namespace FormularioGrafico
 {
     partial class Ejercicio3
     {
@@ -40,6 +40,7 @@ namespace AplicacionGrafica
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button3
@@ -50,6 +51,7 @@ namespace AplicacionGrafica
             this.button3.TabIndex = 21;
             this.button3.Text = "Volver al menu";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -142,11 +144,21 @@ namespace AplicacionGrafica
             this.label5.TabIndex = 24;
             this.label5.Text = "Respuesta:";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(27, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(90, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Universidad ECCI";
+            // 
             // Ejercicio3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 332);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -178,5 +190,6 @@ namespace AplicacionGrafica
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label13;
     }
 }

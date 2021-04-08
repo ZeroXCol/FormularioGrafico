@@ -1,4 +1,4 @@
-﻿using AplicacionGrafica;
+﻿using FormularioGrafico;
 using System;
 using System.Windows.Forms;
 
@@ -14,7 +14,7 @@ namespace FormularioGrafico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ejercicio2());
+            Application.Run(new Menu());
         }
     }
 }

@@ -130,5 +130,12 @@ namespace FormularioGrafico
                 throw;
             }
         }
+
+        private void Volver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Menu Mn = new Menu();
+            Mn.Visible = true;
+        }
     }
 }

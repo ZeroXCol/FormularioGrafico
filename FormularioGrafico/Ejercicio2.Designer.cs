@@ -34,6 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ComboOpc = new System.Windows.Forms.ComboBox();
             this.TxtNum1 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Volver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TxtResultado
@@ -97,11 +100,42 @@
             this.TxtNum1.Size = new System.Drawing.Size(100, 20);
             this.TxtNum1.TabIndex = 10;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(43, 34);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(99, 13);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Calculo Produccion";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(43, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(90, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Universidad ECCI";
+            // 
+            // Volver
+            // 
+            this.Volver.Location = new System.Drawing.Point(46, 138);
+            this.Volver.Name = "Volver";
+            this.Volver.Size = new System.Drawing.Size(110, 23);
+            this.Volver.TabIndex = 29;
+            this.Volver.Text = "Volver al menu";
+            this.Volver.UseVisualStyleBackColor = true;
+            this.Volver.Click += new System.EventHandler(this.Volver_Click);
+            // 
             // Ejercicio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 172);
+            this.ClientSize = new System.Drawing.Size(525, 160);
+            this.Controls.Add(this.Volver);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.TxtResultado);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -123,5 +157,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox ComboOpc;
         private System.Windows.Forms.TextBox TxtNum1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button Volver;
     }
 }

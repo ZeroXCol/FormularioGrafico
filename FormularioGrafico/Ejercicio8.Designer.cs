@@ -1,5 +1,5 @@
 ﻿
-namespace AplicacionGrafica
+namespace FormularioGrafico
 {
     partial class Ejercicio8
     {
@@ -40,6 +40,7 @@ namespace AplicacionGrafica
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label_res = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -132,6 +133,7 @@ namespace AplicacionGrafica
             this.button3.TabIndex = 9;
             this.button3.Text = "Volver al menu";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label_res
             // 
@@ -142,11 +144,21 @@ namespace AplicacionGrafica
             this.label_res.Size = new System.Drawing.Size(0, 20);
             this.label_res.TabIndex = 13;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(12, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(90, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Universidad ECCI";
+            // 
             // Ejercicio8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 305);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label_res);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -178,5 +190,6 @@ namespace AplicacionGrafica
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label_res;
+        private System.Windows.Forms.Label label13;
     }
 }

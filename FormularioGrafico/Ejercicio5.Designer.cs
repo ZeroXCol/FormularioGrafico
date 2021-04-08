@@ -34,6 +34,8 @@ namespace FormularioGrafico
             this.label1 = new System.Windows.Forms.Label();
             this.Cdias = new System.Windows.Forms.TextBox();
             this.DataTemperaturas = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,8 +49,7 @@ namespace FormularioGrafico
             this.Tmax = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Tmin = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Volver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataTemperaturas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,6 +97,16 @@ namespace FormularioGrafico
             this.DataTemperaturas.Name = "DataTemperaturas";
             this.DataTemperaturas.Size = new System.Drawing.Size(243, 247);
             this.DataTemperaturas.TabIndex = 31;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "TempMax";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "TempMin";
+            this.Column2.Name = "Column2";
             // 
             // label2
             // 
@@ -203,21 +214,22 @@ namespace FormularioGrafico
             this.Tmin.Size = new System.Drawing.Size(100, 20);
             this.Tmin.TabIndex = 44;
             // 
-            // Column1
+            // Volver
             // 
-            this.Column1.HeaderText = "TempMax";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "TempMin";
-            this.Column2.Name = "Column2";
+            this.Volver.Location = new System.Drawing.Point(43, 312);
+            this.Volver.Name = "Volver";
+            this.Volver.Size = new System.Drawing.Size(110, 23);
+            this.Volver.TabIndex = 45;
+            this.Volver.Text = "Volver al menu";
+            this.Volver.UseVisualStyleBackColor = true;
+            this.Volver.Click += new System.EventHandler(this.Volver_Click);
             // 
             // Ejercicio5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Volver);
             this.Controls.Add(this.Tmin);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Tmax);
@@ -266,5 +278,6 @@ namespace FormularioGrafico
         private System.Windows.Forms.TextBox Tmin;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Button Volver;
     }
 }

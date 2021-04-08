@@ -56,11 +56,12 @@ namespace FormularioGrafico
             this.Stotal = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.Volver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(278, 305);
+            this.button1.Location = new System.Drawing.Point(263, 293);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -279,11 +280,22 @@ namespace FormularioGrafico
             this.label14.TabIndex = 26;
             this.label14.Text = "Calculo Produccion";
             // 
+            // Volver
+            // 
+            this.Volver.Location = new System.Drawing.Point(73, 347);
+            this.Volver.Name = "Volver";
+            this.Volver.Size = new System.Drawing.Size(113, 23);
+            this.Volver.TabIndex = 27;
+            this.Volver.Text = "Volver al menu";
+            this.Volver.UseVisualStyleBackColor = true;
+            this.Volver.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Ejercicio4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(629, 397);
+            this.Controls.Add(this.Volver);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.Stotal);
@@ -347,5 +359,6 @@ namespace FormularioGrafico
         private System.Windows.Forms.TextBox Stotal;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button Volver;
     }
 }
