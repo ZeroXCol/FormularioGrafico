@@ -138,6 +138,7 @@ namespace FormularioGrafico
             this.Ej10.TabIndex = 9;
             this.Ej10.Text = "Ejercico10";
             this.Ej10.UseVisualStyleBackColor = true;
+            this.Ej10.Click += new System.EventHandler(this.Ej10_Click);
             // 
             // Menu
             // 

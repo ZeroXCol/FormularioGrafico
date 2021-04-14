@@ -72,8 +72,15 @@ namespace FormularioGrafico
         private void Ej9_Click(object sender, EventArgs e)
         {
             this.Close();
-            Ejercicio9 Ej2 = new Ejercicio9();
+            Ejercicio9 Ej9 = new Ejercicio9();
             Ej9.Visible = true;
+        }
+
+        private void Ej10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+             Ejercicio10 Ej10= new Ejercicio10();
+             Ej10.Visible = true;
         }
     }
 }

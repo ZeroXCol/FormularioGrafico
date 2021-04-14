@@ -120,7 +120,7 @@
             // 
             // Volver
             // 
-            this.Volver.Location = new System.Drawing.Point(46, 138);
+            this.Volver.Location = new System.Drawing.Point(46, 125);
             this.Volver.Name = "Volver";
             this.Volver.Size = new System.Drawing.Size(110, 23);
             this.Volver.TabIndex = 29;
